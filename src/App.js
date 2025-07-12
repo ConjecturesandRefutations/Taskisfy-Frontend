@@ -8,12 +8,6 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      const demoTasks = [
-        { id: 1, text: "Complete project proposal", completed: false },
-        { id: 2, text: "Review team feedback", completed: true },
-        { id: 3, text: "Schedule meeting with client", completed: false }
-      ];
-      setTasks(demoTasks);
       setIsLoading(false);
     }, 1000);
   }, []);
@@ -53,7 +47,7 @@ function App() {
     <div className="min-h-screen flex flex-col bg-gray-50">
       <header className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-6">
-          <h1 className="text-3xl font-bold text-primary">TaskRabbit</h1>
+          <h1 className="text-3xl font-bold text-primary">Taskify</h1>
           <p className="text-gray-600">Complete your tasks efficiently</p>
         </div>
       </header>
@@ -142,7 +136,7 @@ function App() {
 
       <footer className="bg-white border-t mt-8">
         <div className="container mx-auto px-4 py-6 text-center text-gray-600 text-sm">
-          <p>© {new Date().getFullYear()} TaskRabbit - Get things done!</p>
+          <p>© {new Date().getFullYear()} Taskify - Get things done!</p>
         </div>
       </footer>
     </div>
