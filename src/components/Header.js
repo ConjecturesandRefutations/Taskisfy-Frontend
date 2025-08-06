@@ -3,7 +3,7 @@ import { AuthContext } from "./../context/auth.context";
 
 function Header() {
 
-  const { isLoggedIn, logOutUser } = useContext(AuthContext);
+  const { logOutUser } = useContext(AuthContext);
 
   return (
   <header className="bg-white shadow-sm">
